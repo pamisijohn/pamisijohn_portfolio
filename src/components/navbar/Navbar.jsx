@@ -7,7 +7,7 @@ const NavItems = () => {
       {navLinks.map(({ id, href, name }) => (
         <li
           key={id}
-          className="text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5">
+          className="text-neutral-400 hover:text-white max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5">
           <a
             href={href}
             className="text-lg md:text-base hover:text-white transition-colors"
@@ -32,7 +32,7 @@ const Navbar = () => {
           <a
             href="/"
             className="text-neutral-400 font-bold text-xl hover:text-white transition-colors sm:px-10 px-5">
-            John
+            J<span className="text-[#FF9F1C]">P</span>
           </a>
 
           <button

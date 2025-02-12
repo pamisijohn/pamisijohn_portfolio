@@ -1,14 +1,15 @@
+import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
   return (
     <main className="max-w-7xl mx-auto">
       <Navbar />
-      {/* <section id="#home">
+      <section id="#home">
         <Hero />
       </section>
-      <section id="#services">
-        <Services />
+      {/* <section id="#about">
+        <About />
       </section>
       <section id="#portfolio">
         <Portfolio />
