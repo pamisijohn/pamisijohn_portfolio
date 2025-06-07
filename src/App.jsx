@@ -1,23 +1,14 @@
-import Hero from "./components/hero/Hero";
-import Navbar from "./components/navbar/Navbar";
+import Layout from "./components/layout/Layout";
+import { NavigationProvider } from "./context/NavigationContext";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const App = () => {
   return (
-    <main className="max-w-7xl mx-auto">
-      <Navbar />
-      <section id="#home">
-        <Hero />
-      </section>
-      {/* <section id="#about">
-        <About />
-      </section>
-      <section id="#portfolio">
-        <Portfolio />
-      </section>
-      <section id="#contact">
-        <Contact />
-      </section> */}
-    </main>
+    <ThemeProvider>
+      <NavigationProvider>
+        <Layout></Layout>
+      </NavigationProvider>
+    </ThemeProvider>
   );
 };
 
