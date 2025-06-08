@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <div
       className={`min-h-screen ${
         isDarkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
-      } transition-colors duration-300`}>
+      } transition`}>
       <Header />
       <main>{children}</main>
       <Footer />

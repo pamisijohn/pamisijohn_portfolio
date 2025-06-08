@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 all-transition ${
         isScrolled
           ? isDarkMode
             ? "bg-gray-800/90 backdrop-blur-md"
@@ -22,10 +22,10 @@ const Header = () => {
           href="#home"
           className="text-2xl font-bold tracking-tight cursor-pointer"
           onClick={() => scrollToSection("home")}>
-          J
           <span className={`${isDarkMode ? "text-blue-400" : "text-blue-600"}`}>
-            P
+            J
           </span>
+          P
         </a>
 
         {/* Desktop Navigation */}
@@ -38,7 +38,7 @@ const Header = () => {
                 e.preventDefault();
                 scrollToSection(item);
               }}
-              className={`text-sm capitalize tracking-wider font-medium transition-colors duration-300 cursor-pointer whitespace-nowrap ${
+              className={`text-sm capitalize tracking-wider font-medium color-transition cursor-pointer whitespace-nowrap ${
                 activeSection === item
                   ? isDarkMode
                     ? "text-blue-400"
@@ -53,7 +53,7 @@ const Header = () => {
 
           <button
             onClick={toggleDarkMode}
-            className="p-2 rounded-full cursor-pointer !rounded-button whitespace-nowrap"
+            className="p-2 rounded-full cursor-pointer color-transition whitespace-nowrap"
             aria-label="Toggle dark and light mode">
             <i
               className={`fas ${

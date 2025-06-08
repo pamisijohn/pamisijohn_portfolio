@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+.color-transition {
+  @apply transition-colors duration-300;
+}
+.all-transition {
+  @apply transition-all duration-300;
+}
+
+.flex-between {
+  @apply flex flex-col md:flex-row justify-between items-center;
+}
+
+.center-flex {
+  @apply flex justify-center items-center;
+}
+
+.md-flex-row {
+  @apply flex flex-col md:flex-row items-center;
+}
