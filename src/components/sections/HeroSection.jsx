@@ -77,7 +77,9 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button className="text-2xl cursor-pointer whitespace-nowrap">
+        <button
+          onClick={() => scrollToSection("projects")}
+          className="text-2xl cursor-pointer whitespace-nowrap">
           <i
             className={`fas fa-chevron-down ${
               isDarkMode ? "text-white" : "text-gray-800"

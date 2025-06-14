@@ -12,7 +12,7 @@ export const NavigationProvider = ({ children }) => {
       setIsScrolled(window.scrollY > 50);
 
       // Update active section based on scroll position
-      const sections = ["home", "project", "skill", "contact"];
+      const sections = ["home", "projects", "skill", "contact"];
       const currentSection = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
