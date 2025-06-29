@@ -132,7 +132,7 @@ const ProjectSection = () => {
                 ? "bg-blue-500 hover:bg-blue-600 text-white"
                 : "bg-blue-600 hover:bg-blue-700 text-white"
             }`}>
-            View All Projects
+            View All Projects <i className="fas fa-arrow-right ml-2"></i>
           </a>
         </div>
       </div>
